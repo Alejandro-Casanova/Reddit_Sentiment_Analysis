@@ -1,0 +1,2380 @@
+[
+    {
+        "id": "e41215de.abe288",
+        "type": "tab",
+        "label": "Kafka",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c9bf3279.0dcd18",
+        "type": "tab",
+        "label": "Sentiment Analysis",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6a87cbc1.bb2b94",
+        "type": "tab",
+        "label": "Word Counter",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3d950197.3b63a6",
+        "type": "tab",
+        "label": "Biased Word Counter",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "9d782424.6c0968",
+        "type": "tab",
+        "label": "Controls",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "29a1a1c.d79afde",
+        "type": "tab",
+        "label": "MQTT-Mobile",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "711b8a6f.aefffc",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e61383.ba5fec8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4aec5604.0d92e8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Control",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "19d5c24.9d2863e",
+        "type": "ui_group",
+        "z": "",
+        "name": "Display",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "326ca7b6.517388",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "c7f164fa.c2d8f8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Display",
+        "tab": "75ba103d.716518",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b9aa0349.fe197",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "75ba103d.716518",
+        "type": "ui_tab",
+        "z": "",
+        "name": "MyMobile",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "29ba0f3d.b78698",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "mqtt://mqtt.hsl.fi:1883",
+        "port": "8883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "c121b057.70e8b",
+        "type": "reddit-credentials",
+        "z": "",
+        "username": "alejandro_nova",
+        "user_agent": "MyAPI/0.0.1",
+        "auth_type": "username_password",
+        "name": "Alex"
+    },
+    {
+        "id": "593e3623.2bc77",
+        "type": "kafka-broker",
+        "z": "",
+        "name": "",
+        "hosts": "localhost:9092",
+        "selfsign": false,
+        "usetls": false,
+        "cacert": "",
+        "clientcert": "",
+        "privatekey": "",
+        "passphrase": ""
+    },
+    {
+        "id": "6f1b8e9f.ed9c88",
+        "type": "ui_group",
+        "z": "",
+        "name": "Pie chart",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "658817b5.487138",
+        "type": "ui_group",
+        "z": "",
+        "name": "Line chart",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "15",
+        "collapse": false
+    },
+    {
+        "id": "2621195c.064eb6",
+        "type": "ui_group",
+        "z": "",
+        "name": "Gauge",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "595db0d7.527d5",
+        "type": "ui_group",
+        "z": "",
+        "name": "hot",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "5525c7ce.c4e02",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "ff5cbee3.3e2ae",
+        "type": "ui_group",
+        "name": "Group 5",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "c12beece.eba2b8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Reddit Analysis",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9045a237.08887",
+        "type": "ui_group",
+        "z": "",
+        "name": "Content",
+        "tab": "c12beece.eba2b8",
+        "order": 3,
+        "disp": true,
+        "width": "14",
+        "collapse": false
+    },
+    {
+        "id": "c14f2d76.42f41",
+        "type": "ui_group",
+        "z": "",
+        "name": "Inputs",
+        "tab": "c12beece.eba2b8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bd0a761d.f37808",
+        "type": "ui_group",
+        "z": "",
+        "name": "Sentiment",
+        "tab": "c12beece.eba2b8",
+        "order": 2,
+        "disp": true,
+        "width": "14",
+        "collapse": false
+    },
+    {
+        "id": "28b3a2f1.e52a06",
+        "type": "ui_group",
+        "z": "",
+        "name": "Controls",
+        "tab": "75ba103d.716518",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "db347374.c4cba",
+        "type": "ui_template",
+        "z": "c9bf3279.0dcd18",
+        "group": "9045a237.08887",
+        "name": "Last Comments Table",
+        "order": 1,
+        "width": "14",
+        "height": "8",
+        "format": "<style>\n    table {\n        border-collapse: collapse;\n    }\n    tr:nth-child(even) {\n        background-color: #4d4d4d;\n    }\n</style>\n\n\n<table class=\"table\" border=1 frame=box rules=cols>\n <tr style=\"outline: thin solid\">\n     <th scope=\"col\">Comment</th>\n     <th scope=\"col\">Sentiment</th> \n </tr>\n <tbody>\n <tr ng-repeat=\"row in msg.payload\">\n    <td>{{row.body}}</td>\n    <td style=\"text-align:center\">\n        {{row.sentiment_score}}\n    </td>\n </tr>\n </tbody>\n</table>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 1090,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3a0536f.61e77",
+        "type": "debug",
+        "z": "c9bf3279.0dcd18",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1090,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "e533f997.493a38",
+        "type": "function",
+        "z": "c9bf3279.0dcd18",
+        "name": "buffer last msgs",
+        "func": "if (!flow.get(\"last_msgs\")) {\n    flow.set(\"last_msgs\", [])\n}\n\nconst MAX_MSG_LENGTH = 150 // Max text length to display\nconst MAX_MSG_NUM = 15 // Number of messages to display\n\nlast_msgs = flow.get(\"last_msgs\")\n\n// Truncate comment text if too long\nif(msg.payload.comment_body.length > MAX_MSG_LENGTH){\n    msg.payload.comment_body = msg.payload.comment_body.slice(0, MAX_MSG_LENGTH) + \"...\"\n}\n\n// Build message to buffer\nmsg_to_store = {\n    body: msg.payload.comment_body,\n    sentiment_score: msg.payload.sentiment.score\n}\n\n// Push into array\nlast_msgs.unshift(msg_to_store)\n\nif(last_msgs.length > MAX_MSG_NUM)\n    last_msgs.pop()\n  \nlet ret = {}\nret.payload = last_msgs\nreturn ret;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 400,
+        "wires": [
+            [
+                "f3a0536f.61e77",
+                "db347374.c4cba"
+            ]
+        ]
+    },
+    {
+        "id": "58e1e823.11c9",
+        "type": "ui_chart",
+        "z": "c9bf3279.0dcd18",
+        "name": "Sentiment History",
+        "group": "bd0a761d.f37808",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "label": "Sentiment History",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "250",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 620,
+        "wires": [
+            [
+                "6822de96.b4cc48"
+            ]
+        ]
+    },
+    {
+        "id": "5d441e56.e7449",
+        "type": "function",
+        "z": "c9bf3279.0dcd18",
+        "name": "setup score",
+        "func": "msg.payload = msg.payload.value.sentiment.score\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 730,
+        "y": 620,
+        "wires": [
+            [
+                "58e1e823.11c9"
+            ]
+        ]
+    },
+    {
+        "id": "1663e34e.66cb7d",
+        "type": "inject",
+        "z": "c9bf3279.0dcd18",
+        "name": "Reset",
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 710,
+        "y": 520,
+        "wires": [
+            [
+                "f153fc43.3affd8"
+            ]
+        ]
+    },
+    {
+        "id": "c3bf6e94.5361f",
+        "type": "ui_gauge",
+        "z": "c9bf3279.0dcd18",
+        "name": "Current Sentiment",
+        "group": "bd0a761d.f37808",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current Sentiment",
+        "label": "units",
+        "format": "{{value | number:2}}",
+        "min": "-5",
+        "max": "5",
+        "colors": [
+            "#ce3d31",
+            "#0200e6",
+            "#35e61c"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1210,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "6822de96.b4cc48",
+        "type": "function",
+        "z": "c9bf3279.0dcd18",
+        "name": "calculate avg sentiment",
+        "func": "let total = 0; \n\nfor (let i = 0; i < msg.payload[0].data[0].length; i++) {\n    if ( msg.payload[0].data[0][i] ) {\n        total += msg.payload[0].data[0][i].y\n    }\n}\n\nlet avg = total / msg.payload[0].data[0].length; \n//msg.payload = Math.floor(avg * 100) / 100\n\nmsg.payload = avg\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1190,
+        "y": 620,
+        "wires": [
+            [
+                "c3bf6e94.5361f",
+                "fb4473d4.b086d8"
+            ]
+        ]
+    },
+    {
+        "id": "f222fa71.1a5c18",
+        "type": "stream",
+        "z": "e41215de.abe288",
+        "name": "",
+        "reddit": "c121b057.70e8b",
+        "kind": "comments",
+        "subreddit": "worldnews",
+        "filter": "inbox",
+        "markedAsRead": false,
+        "timeout": "",
+        "pollTime": "",
+        "x": 210,
+        "y": 220,
+        "wires": [
+            [
+                "a172995b.c0bf48"
+            ]
+        ]
+    },
+    {
+        "id": "4b483c02.22f904",
+        "type": "function",
+        "z": "e41215de.abe288",
+        "name": "get body",
+        "func": "msg.payload = msg.payload.body\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 580,
+        "y": 220,
+        "wires": [
+            [
+                "ebeb07e3.ad5f9"
+            ]
+        ]
+    },
+    {
+        "id": "ebeb07e3.ad5f9",
+        "type": "kafka-producer",
+        "z": "e41215de.abe288",
+        "name": "Comments Producer",
+        "broker": "593e3623.2bc77",
+        "topic": "comments",
+        "requireAcks": 1,
+        "ackTimeoutMs": 100,
+        "attributes": 0,
+        "x": 820,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7bbe2758.d2ce28",
+        "type": "kafka-consumer",
+        "z": "e41215de.abe288",
+        "name": "Comments Consumer",
+        "broker": "593e3623.2bc77",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "comments",
+        "groupid": "",
+        "x": 360,
+        "y": 320,
+        "wires": [
+            [
+                "7fc5d956.486fb"
+            ]
+        ]
+    },
+    {
+        "id": "30d5d820.87bd98",
+        "type": "sentiment",
+        "z": "e41215de.abe288",
+        "name": "",
+        "property": "payload",
+        "x": 740,
+        "y": 320,
+        "wires": [
+            [
+                "627b59f4.9d0a38"
+            ]
+        ]
+    },
+    {
+        "id": "ddab260a.a2bff",
+        "type": "kafka-producer",
+        "z": "e41215de.abe288",
+        "name": "Sentiment Producer",
+        "broker": "593e3623.2bc77",
+        "topic": "sentiment",
+        "requireAcks": 1,
+        "ackTimeoutMs": 100,
+        "attributes": 0,
+        "x": 1280,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "c209d530.befda8",
+        "type": "function",
+        "z": "e41215de.abe288",
+        "name": "split words",
+        "func": "let words = msg.payload.value.sentiment.tokens\n\nlet returnArr = []\n\nfor (let i = 0; i < words.length; i++) {\n    if (words[i].length > 2 && words[i].length < 25) {\n        returnArr.push({\"payload\": words[i].toLowerCase()})\n    }\n}\n\nreturn [returnArr]",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 690,
+        "y": 420,
+        "wires": [
+            [
+                "8a438cf3.30c63"
+            ]
+        ]
+    },
+    {
+        "id": "83cd7f37.5b7b",
+        "type": "kafka-consumer",
+        "z": "e41215de.abe288",
+        "name": "Sentiment Consumer",
+        "broker": "593e3623.2bc77",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "sentiment",
+        "groupid": "",
+        "x": 260,
+        "y": 420,
+        "wires": [
+            [
+                "7efeb100.477cb"
+            ]
+        ]
+    },
+    {
+        "id": "8a438cf3.30c63",
+        "type": "kafka-producer",
+        "z": "e41215de.abe288",
+        "name": "Words Producer",
+        "broker": "593e3623.2bc77",
+        "topic": "words",
+        "requireAcks": 1,
+        "ackTimeoutMs": 100,
+        "attributes": 0,
+        "x": 900,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "19f9926b.1da67e",
+        "type": "function",
+        "z": "e41215de.abe288",
+        "name": "split words",
+        "func": "let words = msg.payload.value.sentiment.words\n\nlet returnArr = []\n\nfor (let i = 0; i < words.length; i++) {\n    returnArr.push({\"payload\": words[i].toLowerCase()})\n}\n\nreturn [returnArr]",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "7534785c.a9c1f8"
+            ]
+        ]
+    },
+    {
+        "id": "f3db959.401ef68",
+        "type": "kafka-consumer",
+        "z": "e41215de.abe288",
+        "name": "Sentiment Consumer",
+        "broker": "593e3623.2bc77",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "sentiment",
+        "groupid": "",
+        "x": 260,
+        "y": 520,
+        "wires": [
+            [
+                "fd631eb3.de22"
+            ]
+        ]
+    },
+    {
+        "id": "4c305ba5.1b796c",
+        "type": "kafka-producer",
+        "z": "e41215de.abe288",
+        "name": "Biased Words Producer",
+        "broker": "593e3623.2bc77",
+        "topic": "biased_words",
+        "requireAcks": 1,
+        "ackTimeoutMs": 100,
+        "attributes": 0,
+        "x": 1270,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7534785c.a9c1f8",
+        "type": "sentiment",
+        "z": "e41215de.abe288",
+        "name": "",
+        "property": "payload",
+        "x": 780,
+        "y": 520,
+        "wires": [
+            [
+                "168473f7.1d07fc"
+            ]
+        ]
+    },
+    {
+        "id": "89ef683c.b0ad4",
+        "type": "kafka-consumer",
+        "z": "c9bf3279.0dcd18",
+        "name": "Sentiment Cosumer",
+        "broker": "593e3623.2bc77",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "sentiment",
+        "groupid": "",
+        "x": 390,
+        "y": 620,
+        "wires": [
+            [
+                "a19fc8e2.10beb"
+            ]
+        ]
+    },
+    {
+        "id": "854d9e5b.dc9478",
+        "type": "kafka-consumer",
+        "z": "c9bf3279.0dcd18",
+        "name": "Sentiment Cosumer",
+        "broker": "593e3623.2bc77",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "sentiment",
+        "groupid": "",
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "9bec1624.d56d6"
+            ]
+        ]
+    },
+    {
+        "id": "7fc5d956.486fb",
+        "type": "function",
+        "z": "e41215de.abe288",
+        "name": "filter",
+        "func": "msg.payload = msg.payload.value\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "30d5d820.87bd98"
+            ]
+        ]
+    },
+    {
+        "id": "627b59f4.9d0a38",
+        "type": "function",
+        "z": "e41215de.abe288",
+        "name": "format",
+        "func": "ret = {}\nret.payload = {}\nret.payload.sentiment = msg.sentiment\nret.payload.comment_body = msg.payload\n\nreturn ret;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 910,
+        "y": 320,
+        "wires": [
+            [
+                "797f2f38.6295a"
+            ]
+        ]
+    },
+    {
+        "id": "797f2f38.6295a",
+        "type": "json",
+        "z": "e41215de.abe288",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 1070,
+        "y": 320,
+        "wires": [
+            [
+                "ddab260a.a2bff"
+            ]
+        ]
+    },
+    {
+        "id": "7efeb100.477cb",
+        "type": "json",
+        "z": "e41215de.abe288",
+        "name": "",
+        "property": "payload.value",
+        "action": "obj",
+        "pretty": false,
+        "x": 490,
+        "y": 420,
+        "wires": [
+            [
+                "c209d530.befda8"
+            ]
+        ]
+    },
+    {
+        "id": "fd631eb3.de22",
+        "type": "json",
+        "z": "e41215de.abe288",
+        "name": "",
+        "property": "payload.value",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 520,
+        "wires": [
+            [
+                "19f9926b.1da67e"
+            ]
+        ]
+    },
+    {
+        "id": "a19fc8e2.10beb",
+        "type": "json",
+        "z": "c9bf3279.0dcd18",
+        "name": "",
+        "property": "payload.value",
+        "action": "obj",
+        "pretty": false,
+        "x": 570,
+        "y": 620,
+        "wires": [
+            [
+                "5d441e56.e7449"
+            ]
+        ]
+    },
+    {
+        "id": "9bec1624.d56d6",
+        "type": "json",
+        "z": "c9bf3279.0dcd18",
+        "name": "",
+        "property": "payload.value",
+        "action": "obj",
+        "pretty": false,
+        "x": 570,
+        "y": 400,
+        "wires": [
+            [
+                "9a22b9ef.59629"
+            ]
+        ]
+    },
+    {
+        "id": "9a22b9ef.59629",
+        "type": "function",
+        "z": "c9bf3279.0dcd18",
+        "name": "extract",
+        "func": "msg.payload = msg.payload.value\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 710,
+        "y": 400,
+        "wires": [
+            [
+                "e533f997.493a38"
+            ]
+        ]
+    },
+    {
+        "id": "168473f7.1d07fc",
+        "type": "function",
+        "z": "e41215de.abe288",
+        "name": "format",
+        "func": "ret = {}\nret.payload = {}\nret.payload.sentiment_score = msg.sentiment.score\nret.payload.word = msg.payload\n\nreturn ret;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 930,
+        "y": 520,
+        "wires": [
+            [
+                "568600aa.2f921"
+            ]
+        ]
+    },
+    {
+        "id": "568600aa.2f921",
+        "type": "json",
+        "z": "e41215de.abe288",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 1070,
+        "y": 520,
+        "wires": [
+            [
+                "4c305ba5.1b796c"
+            ]
+        ]
+    },
+    {
+        "id": "b87d98cf.35b12",
+        "type": "comment",
+        "z": "6a87cbc1.bb2b94",
+        "name": "{word, count}",
+        "info": "",
+        "x": 830,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4aa0965a.1f83f",
+        "type": "function",
+        "z": "6a87cbc1.bb2b94",
+        "name": "freq > threshold",
+        "func": "if (!flow.get(\"threshold\")) {\n    flow.set(\"threshold\", 1)\n}\n\nif (msg.payload >= flow.get(\"threshold\")) {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 700,
+        "y": 460,
+        "wires": [
+            [
+                "3156e39c.9f732c"
+            ]
+        ]
+    },
+    {
+        "id": "e958de88.22d3e",
+        "type": "ui_chart",
+        "z": "6a87cbc1.bb2b94",
+        "name": "Most Commented Words",
+        "group": "9045a237.08887",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Most Commented Words",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1110,
+        "y": 340,
+        "wires": [
+            [
+                "fef8d98b.be3f48"
+            ]
+        ]
+    },
+    {
+        "id": "48926ab1.5e8efc",
+        "type": "function",
+        "z": "6a87cbc1.bb2b94",
+        "name": "Reset State",
+        "func": "flow.set(\"words\", {})\nflow.set(\"threshold\", 1)\nflow.set(\"topWords\", new Map())\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1070,
+        "y": 220,
+        "wires": [
+            [
+                "e958de88.22d3e"
+            ]
+        ]
+    },
+    {
+        "id": "3156e39c.9f732c",
+        "type": "function",
+        "z": "6a87cbc1.bb2b94",
+        "name": "get top words",
+        "func": "const MAX_LENGTH = 6\n\nif (!flow.get(\"topWords\")){\n    flow.set(\"topWords\", new Map())\n}\n\nlet topWords = flow.get(\"topWords\")\n\ntopWords.set(msg.topic, msg.payload)\n\n// If space for more words\nif(topWords.size > MAX_LENGTH){\n    let lowest_key = msg.topic\n    let lowest_val = msg.payload\n    let second_lowest_key = null\n    let second_lowest_val = null\n    \n    // Find first and second lowest words\n    topWords.forEach( function(value, key) {\n        if(value < lowest_val){\n            second_lowest_key = lowest_key\n            second_lowest_val = lowest_val\n            lowest_key = key\n            lowest_val = value\n        }\n    })\n    \n    // Remove extra element\n    topWords.delete(lowest_key)\n    \n    // Find new lowest (if not found already)\n    if(second_lowest_key === null){\n        second_lowest_key = topWords.keys().next().value\n        second_lowest_val = topWords.get(second_lowest_key)\n        // Find second lowest words\n        topWords.forEach( function(value, key) {\n            if(value < second_lowest_val){\n                second_lowest_key = key\n                second_lowest_val = value\n            }\n        })\n    }\n    \n    // Update threshold\n    flow.set(\"threshold\", second_lowest_val)\n    \n    data = []\n    labels = []\n    \n    const newMap = Array.from(topWords).sort((a, b) => b[1] - a[1]);\n    const newSortedMap = new Map(newMap);\n    \n    // Store data in correct format for full chart representation\n    newSortedMap.forEach( function(value, key) {\n        data.push(value)\n        labels.push(key)\n    })\n    \n    // Build msg\n    msg.payload = [{\n        series: [ \"\" ],\n        data: [ data ],\n        labels: labels\n    }]\n    \n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 800,
+        "y": 520,
+        "wires": [
+            [
+                "e958de88.22d3e"
+            ]
+        ]
+    },
+    {
+        "id": "fef8d98b.be3f48",
+        "type": "debug",
+        "z": "6a87cbc1.bb2b94",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1330,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c75c8c8.8f125f",
+        "type": "inject",
+        "z": "6a87cbc1.bb2b94",
+        "name": "Reset",
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 890,
+        "y": 220,
+        "wires": [
+            [
+                "48926ab1.5e8efc"
+            ]
+        ]
+    },
+    {
+        "id": "452991f5.99f6c8",
+        "type": "function",
+        "z": "6a87cbc1.bb2b94",
+        "name": "count words",
+        "func": "if (!flow.get(\"words\")){\n    flow.set(\"words\", {})\n}\n\nlet words = flow.get(\"words\")\n\n// Check if word has been counted before\nif (!words[msg.payload]) {\n    words[msg.payload] = 0\n}\n\nwords[msg.payload]++\n\nmsg.topic = msg.payload // Word\nmsg.payload = words[msg.topic] // Count\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 650,
+        "y": 400,
+        "wires": [
+            [
+                "4aa0965a.1f83f"
+            ]
+        ]
+    },
+    {
+        "id": "9bc73599.fa16c",
+        "type": "function",
+        "z": "6a87cbc1.bb2b94",
+        "name": "filter irrelevant words",
+        "func": "\nconst unrelevant_words = [\n    'the',\n    'for',\n    'they',\n    'and',\n    'that',\n    'you',\n    'not',\n    'this',\n    'are',\n    'but',\n    'have',\n    'their',\n    'was',\n    'with',\n    'would',\n    'what',\n    'just',\n    'will',\n    'been',\n    'all',\n    'from',\n    'your',\n    'them',\n    'it\\'s',\n    'its',\n    'don\\'t',\n    'dont',\n    'because',\n    'has',\n    'one',\n    'about',\n    'there',\n    'more',\n    'were',\n    'who',\n    'like',\n    'some',\n    'these',\n    'can',\n    'when',\n    'out',\n    'where',\n    'does',\n    'how',\n    'even',\n    'only',\n    'any',\n    'then',\n    'other',\n    'than',\n    'get',\n    'also',\n    'which',\n    'being',\n    'many',\n    'his',\n    'her',\n    'why',\n    'make'\n]\n\nif(!unrelevant_words.includes(msg.payload))\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 620,
+        "y": 340,
+        "wires": [
+            [
+                "452991f5.99f6c8"
+            ]
+        ]
+    },
+    {
+        "id": "9f8a98a7.3958e8",
+        "type": "function",
+        "z": "6a87cbc1.bb2b94",
+        "name": "format",
+        "func": "msg.payload = msg.payload.value\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 340,
+        "wires": [
+            [
+                "9bc73599.fa16c"
+            ]
+        ]
+    },
+    {
+        "id": "384287ac.d4f84",
+        "type": "kafka-consumer",
+        "z": "6a87cbc1.bb2b94",
+        "name": "Words Consumer",
+        "broker": "593e3623.2bc77",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "words",
+        "groupid": "",
+        "x": 220,
+        "y": 340,
+        "wires": [
+            [
+                "9f8a98a7.3958e8"
+            ]
+        ]
+    },
+    {
+        "id": "f153fc43.3affd8",
+        "type": "function",
+        "z": "c9bf3279.0dcd18",
+        "name": "Reset State",
+        "func": "flow.set(\"last_msgs\", [])\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 890,
+        "y": 520,
+        "wires": [
+            [
+                "58e1e823.11c9",
+                "c3bf6e94.5361f",
+                "db347374.c4cba"
+            ]
+        ]
+    },
+    {
+        "id": "fdd4c791.24459",
+        "type": "function",
+        "z": "3d950197.3b63a6",
+        "name": "count sentiment words",
+        "func": "if (!flow.get(\"words\")){\n    flow.set(\"words\", {})\n}\n\nlet words = flow.get(\"words\")\n\n// Check if word has been counted before\nif (!words[msg.payload]) {\n    words[msg.payload] = 0\n}\n\nwords[msg.payload] += msg.sentiment_score\n\nmsg.topic = msg.payload // Word\nmsg.payload = words[msg.topic] // Count\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1020,
+        "y": 220,
+        "wires": [
+            [
+                "4a189afc.314bb4"
+            ]
+        ]
+    },
+    {
+        "id": "e1a9fa59.b1b518",
+        "type": "ui_chart",
+        "z": "3d950197.3b63a6",
+        "name": "Most Relevant Words",
+        "group": "bd0a761d.f37808",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Most Relevant Words",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 980,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a189afc.314bb4",
+        "type": "function",
+        "z": "3d950197.3b63a6",
+        "name": "freq > threshold",
+        "func": "if (!flow.get(\"threshold\")) {\n    flow.set(\"threshold\", 1)\n}\n\nfunction abs(x){\n    return x < 0 ? -x : x\n}\n\nif (abs(msg.payload) >= flow.get(\"threshold\")) {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1240,
+        "y": 220,
+        "wires": [
+            [
+                "951f1eab.902198"
+            ]
+        ]
+    },
+    {
+        "id": "951f1eab.902198",
+        "type": "function",
+        "z": "3d950197.3b63a6",
+        "name": "get relevant words",
+        "func": "const MAX_LENGTH = 8\n\nif (!flow.get(\"topWords\")){\n    flow.set(\"topWords\", new Map())\n}\n\nfunction abs(a){\n    return a < 0 ? -a : a\n}\n\nlet topWords = flow.get(\"topWords\")\n\ntopWords.set(msg.topic, msg.payload)\n\n// If space for more words\nif(topWords.size > MAX_LENGTH){\n    let lowest_key = msg.topic\n    let lowest_val = msg.payload\n    let second_lowest_key = null\n    let second_lowest_val = null\n    \n    // Find first and second lowest words\n    topWords.forEach( function(value, key) {\n        if(abs(value) < abs(lowest_val)){\n            second_lowest_key = lowest_key\n            second_lowest_val = lowest_val\n            lowest_key = key\n            lowest_val = value\n        }\n    })\n    \n    // Remove extra element\n    topWords.delete(lowest_key)\n    \n    // Find new lowest (if not found already)\n    if(second_lowest_key === null){\n        second_lowest_key = topWords.keys().next().value\n        second_lowest_val = topWords.get(second_lowest_key)\n        // Find second lowest words\n        topWords.forEach( function(value, key) {\n            if(abs(value) < abs(second_lowest_val)){\n                second_lowest_key = key\n                second_lowest_val = value\n            }\n        })\n    }\n    \n    // Update threshold\n    flow.set(\"threshold\", abs(second_lowest_val))\n    \n    data = []\n    labels = []\n    \n    const newMap = Array.from(topWords).sort((a, b) => b[1] - a[1]);\n    const newSortedMap = new Map(newMap);\n    \n    // Store data in correct format for full chart representation\n    newSortedMap.forEach( function(value, key) {\n        data.push(value)\n        labels.push(key)\n    })\n    \n    // Build msg\n    msg.payload = [{\n        series: [ \"\" ],\n        data: [ data ],\n        labels: labels\n    }]\n    \n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "e1a9fa59.b1b518"
+            ]
+        ]
+    },
+    {
+        "id": "c7a70421.25b79",
+        "type": "kafka-consumer",
+        "z": "3d950197.3b63a6",
+        "name": "Biased Words Consumer",
+        "broker": "593e3623.2bc77",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "biased_words",
+        "groupid": "",
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "69eb0980.1a5b8"
+            ]
+        ]
+    },
+    {
+        "id": "87b6ab20.dc6918",
+        "type": "function",
+        "z": "3d950197.3b63a6",
+        "name": "format",
+        "func": "let ret = {}\nret.payload = msg.payload.value.word\nret.sentiment_score = msg.payload.value.sentiment_score\nreturn ret;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "84e7abfc.2caee8"
+            ]
+        ]
+    },
+    {
+        "id": "d0b34a74.e98d5",
+        "type": "inject",
+        "z": "3d950197.3b63a6",
+        "name": "Reset",
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 610,
+        "y": 380,
+        "wires": [
+            [
+                "dc3f2b2a.1175c"
+            ]
+        ]
+    },
+    {
+        "id": "dc3f2b2a.1175c",
+        "type": "function",
+        "z": "3d950197.3b63a6",
+        "name": "Reset State",
+        "func": "flow.set(\"words\", {})\nflow.set(\"threshold\", 1)\nflow.set(\"topWords\", new Map())\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 380,
+        "wires": [
+            [
+                "e1a9fa59.b1b518"
+            ]
+        ]
+    },
+    {
+        "id": "69eb0980.1a5b8",
+        "type": "json",
+        "z": "3d950197.3b63a6",
+        "name": "",
+        "property": "payload.value",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "87b6ab20.dc6918"
+            ]
+        ]
+    },
+    {
+        "id": "a326f1da.77ad18",
+        "type": "ui_button",
+        "z": "9d782424.6c0968",
+        "name": "Reset",
+        "group": "c14f2d76.42f41",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "reset",
+        "x": 1030,
+        "y": 480,
+        "wires": [
+            [
+                "102e531e.99a0e5"
+            ]
+        ]
+    },
+    {
+        "id": "f4fa4a58.8b0c5",
+        "type": "inject",
+        "z": "9d782424.6c0968",
+        "name": "Reset",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 860,
+        "y": 480,
+        "wires": [
+            [
+                "a326f1da.77ad18"
+            ]
+        ]
+    },
+    {
+        "id": "102e531e.99a0e5",
+        "type": "link out",
+        "z": "9d782424.6c0968",
+        "name": "Reset",
+        "links": [
+            "2acdf07e.b2ab7",
+            "5bc10b4c.7ee5c4",
+            "5c66956c.e6b98c"
+        ],
+        "x": 1185,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5c66956c.e6b98c",
+        "type": "link in",
+        "z": "3d950197.3b63a6",
+        "name": "Reset Biased Word Count",
+        "links": [
+            "102e531e.99a0e5"
+        ],
+        "x": 635,
+        "y": 440,
+        "wires": [
+            [
+                "dc3f2b2a.1175c"
+            ]
+        ]
+    },
+    {
+        "id": "5bc10b4c.7ee5c4",
+        "type": "link in",
+        "z": "6a87cbc1.bb2b94",
+        "name": "Reset Word Counter",
+        "links": [
+            "102e531e.99a0e5"
+        ],
+        "x": 915,
+        "y": 160,
+        "wires": [
+            [
+                "48926ab1.5e8efc"
+            ]
+        ]
+    },
+    {
+        "id": "2acdf07e.b2ab7",
+        "type": "link in",
+        "z": "c9bf3279.0dcd18",
+        "name": "Reset Sentiment Analysis",
+        "links": [
+            "102e531e.99a0e5"
+        ],
+        "x": 735,
+        "y": 480,
+        "wires": [
+            [
+                "f153fc43.3affd8"
+            ]
+        ]
+    },
+    {
+        "id": "9c8ad5f.a0b2328",
+        "type": "ui_dropdown",
+        "z": "9d782424.6c0968",
+        "name": "Subreddit Selector",
+        "label": "Subreddit:",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "c14f2d76.42f41",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "r/",
+                "value": "",
+                "type": "str"
+            },
+            {
+                "label": "announcements",
+                "value": "announcements",
+                "type": "str"
+            },
+            {
+                "label": "AskReddit",
+                "value": "AskReddit",
+                "type": "str"
+            },
+            {
+                "label": "worldnews",
+                "value": "worldnews",
+                "type": "str"
+            },
+            {
+                "label": "AmItheAsshole",
+                "value": "AmItheAsshole",
+                "type": "str"
+            },
+            {
+                "label": "NoStupidQuestions",
+                "value": "NoStupidQuestions",
+                "type": "str"
+            },
+            {
+                "label": "pcmasterrace",
+                "value": "pcmasterrace",
+                "type": "str"
+            },
+            {
+                "label": "politics",
+                "value": "politics",
+                "type": "str"
+            },
+            {
+                "label": "gaming",
+                "value": "gaming",
+                "type": "str"
+            },
+            {
+                "label": "funny",
+                "value": "funny",
+                "type": "str"
+            },
+            {
+                "label": "movies",
+                "value": "movies",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "5a3a8bea.daf6f4",
+                "ff405a0e.70c5d8"
+            ]
+        ]
+    },
+    {
+        "id": "5a3a8bea.daf6f4",
+        "type": "change",
+        "z": "9d782424.6c0968",
+        "name": "set Subreddit",
+        "rules": [
+            {
+                "t": "set",
+                "p": "subreddit",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 260,
+        "wires": [
+            [
+                "941469ea.825c1"
+            ]
+        ]
+    },
+    {
+        "id": "84e7abfc.2caee8",
+        "type": "function",
+        "z": "3d950197.3b63a6",
+        "name": "filter irrelevant words",
+        "func": "\nconst unrelevant_words = [\n    'like'\n]\n\nif(!unrelevant_words.includes(msg.payload))\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "fdd4c791.24459"
+            ]
+        ]
+    },
+    {
+        "id": "a172995b.c0bf48",
+        "type": "switch",
+        "z": "e41215de.abe288",
+        "name": "",
+        "property": "stream_mode",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 220,
+        "wires": [
+            [
+                "4b483c02.22f904"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b388013b.d53918",
+        "type": "ui_switch",
+        "z": "9d782424.6c0968",
+        "name": "News Stream Mode",
+        "label": "News Stream Mode",
+        "tooltip": "",
+        "group": "c14f2d76.42f41",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 570,
+        "y": 340,
+        "wires": [
+            [
+                "a00fa286.fc9ae",
+                "7de97e55.1cc2e"
+            ]
+        ]
+    },
+    {
+        "id": "a00fa286.fc9ae",
+        "type": "change",
+        "z": "9d782424.6c0968",
+        "name": "set Stream Mode",
+        "rules": [
+            {
+                "t": "set",
+                "p": "stream_mode",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 340,
+        "wires": [
+            [
+                "9652c79a.49729"
+            ]
+        ]
+    },
+    {
+        "id": "3bc7993d.36851e",
+        "type": "ui_text_input",
+        "z": "9d782424.6c0968",
+        "name": "Search Query",
+        "label": "Search:",
+        "tooltip": "",
+        "group": "c14f2d76.42f41",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 460,
+        "y": 540,
+        "wires": [
+            [
+                "b18887d1.875a8",
+                "d5ce33bf.8d1068",
+                "26b06d6f.d6a7da"
+            ]
+        ]
+    },
+    {
+        "id": "7de97e55.1cc2e",
+        "type": "function",
+        "z": "9d782424.6c0968",
+        "name": "set news subreddit",
+        "func": "if(msg.payload){\n    return {payload: \"worldnews\"}\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "9c8ad5f.a0b2328"
+            ]
+        ]
+    },
+    {
+        "id": "ff405a0e.70c5d8",
+        "type": "function",
+        "z": "9d782424.6c0968",
+        "name": "reset stream mode",
+        "func": "if(msg.payload !== 'worldnews'){\n    return {payload: false}\n}\n\nreturn {payload: true}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "b388013b.d53918"
+            ]
+        ]
+    },
+    {
+        "id": "cc50efa2.a154a8",
+        "type": "search",
+        "z": "e41215de.abe288",
+        "name": "",
+        "reddit": "c121b057.70e8b",
+        "subreddit": "{{subreddit}}",
+        "query": "{{query}}",
+        "time": "all",
+        "sort": "relevance",
+        "x": 610,
+        "y": 620,
+        "wires": [
+            [
+                "8ccb9cee.4b0f7"
+            ]
+        ]
+    },
+    {
+        "id": "da3edb6e.acaba",
+        "type": "function",
+        "z": "e41215de.abe288",
+        "name": "format msg",
+        "func": "if (!global.get(\"subreddit\")){\n    global.set(\"subreddit\", \"\")\n}\n\nmsg.subreddit = global.get(\"subreddit\")\nmsg.query = msg.payload\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 430,
+        "y": 620,
+        "wires": [
+            [
+                "cc50efa2.a154a8"
+            ]
+        ]
+    },
+    {
+        "id": "9dc0961a.61f56",
+        "type": "kafka-producer",
+        "z": "e41215de.abe288",
+        "name": "Comments Producer",
+        "broker": "593e3623.2bc77",
+        "topic": "comments",
+        "requireAcks": 1,
+        "ackTimeoutMs": 100,
+        "attributes": 0,
+        "x": 1060,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "8ccb9cee.4b0f7",
+        "type": "function",
+        "z": "e41215de.abe288",
+        "name": "get content",
+        "func": "\nlet arr = [\n    {payload: msg.payload.title, topic: 'title'}\n]\n\nif(msg.payload.selftext !== \"\")\n    arr.push({payload: msg.payload.selftext, topic: 'body'})\n\nreturn [arr]",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 620,
+        "wires": [
+            [
+                "9dc0961a.61f56"
+            ]
+        ]
+    },
+    {
+        "id": "b18887d1.875a8",
+        "type": "link out",
+        "z": "9d782424.6c0968",
+        "name": "Search Query",
+        "links": [
+            "c6aac6c9.ebc218"
+        ],
+        "x": 655,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "c6aac6c9.ebc218",
+        "type": "link in",
+        "z": "e41215de.abe288",
+        "name": "Search Query",
+        "links": [
+            "b18887d1.875a8"
+        ],
+        "x": 295,
+        "y": 620,
+        "wires": [
+            [
+                "da3edb6e.acaba"
+            ]
+        ]
+    },
+    {
+        "id": "57efa37b.82e69c",
+        "type": "ui_gauge",
+        "z": "29a1a1c.d79afde",
+        "name": "Current Sentiment",
+        "group": "c7f164fa.c2d8f8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current Sentiment",
+        "label": "units",
+        "format": "{{value | number:2}}",
+        "min": "-5",
+        "max": "5",
+        "colors": [
+            "#ce3d31",
+            "#0200e6",
+            "#35e61c"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 830,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a57fcfcb.6929b8",
+        "type": "mqtt in",
+        "z": "29a1a1c.d79afde",
+        "name": "",
+        "topic": "metrics/sentiment",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "326ca7b6.517388",
+        "x": 520,
+        "y": 300,
+        "wires": [
+            [
+                "57efa37b.82e69c"
+            ]
+        ]
+    },
+    {
+        "id": "b1f84bf6.761f28",
+        "type": "mqtt out",
+        "z": "29a1a1c.d79afde",
+        "name": "",
+        "topic": "control/stream",
+        "qos": "1",
+        "retain": "false",
+        "broker": "326ca7b6.517388",
+        "x": 1100,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d5ce33bf.8d1068",
+        "type": "function",
+        "z": "9d782424.6c0968",
+        "name": "reset stream mode",
+        "func": "return {payload: false}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 460,
+        "wires": [
+            [
+                "b388013b.d53918"
+            ]
+        ]
+    },
+    {
+        "id": "24f550aa.bca088",
+        "type": "mqtt out",
+        "z": "29a1a1c.d79afde",
+        "name": "",
+        "topic": "control/query",
+        "qos": "2",
+        "retain": "false",
+        "broker": "326ca7b6.517388",
+        "x": 790,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "20b9c9bb.2dd87e",
+        "type": "ui_switch",
+        "z": "29a1a1c.d79afde",
+        "name": "News Stream Mode",
+        "label": "Stream Mode",
+        "tooltip": "",
+        "group": "28b3a2f1.e52a06",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 870,
+        "y": 180,
+        "wires": [
+            [
+                "b1f84bf6.761f28"
+            ]
+        ]
+    },
+    {
+        "id": "bbad333b.de2618",
+        "type": "ui_text_input",
+        "z": "29a1a1c.d79afde",
+        "name": "Search Query",
+        "label": "Search:",
+        "tooltip": "",
+        "group": "28b3a2f1.e52a06",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 560,
+        "y": 420,
+        "wires": [
+            [
+                "24f550aa.bca088"
+            ]
+        ]
+    },
+    {
+        "id": "68574f19.696e3",
+        "type": "ui_text",
+        "z": "29a1a1c.d79afde",
+        "group": "c7f164fa.c2d8f8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Stream State",
+        "label": "Streaming State",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 850,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7ff3fb7b.7f2b84",
+        "type": "mqtt in",
+        "z": "29a1a1c.d79afde",
+        "name": "",
+        "topic": "status/stream",
+        "qos": "1",
+        "datatype": "utf8",
+        "broker": "326ca7b6.517388",
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "7f445d4e.f07144",
+                "6d2766ae.a7f478"
+            ]
+        ]
+    },
+    {
+        "id": "9652c79a.49729",
+        "type": "mqtt out",
+        "z": "9d782424.6c0968",
+        "name": "",
+        "topic": "status/stream",
+        "qos": "1",
+        "retain": "true",
+        "broker": "326ca7b6.517388",
+        "x": 1140,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "fb4473d4.b086d8",
+        "type": "mqtt out",
+        "z": "c9bf3279.0dcd18",
+        "name": "",
+        "topic": "metrics/sentiment",
+        "qos": "0",
+        "retain": "false",
+        "broker": "326ca7b6.517388",
+        "x": 1210,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "82386018.828838",
+        "type": "mqtt in",
+        "z": "9d782424.6c0968",
+        "name": "",
+        "topic": "control/stream",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "326ca7b6.517388",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "ba89ad73.8dc57"
+            ]
+        ]
+    },
+    {
+        "id": "ba89ad73.8dc57",
+        "type": "change",
+        "z": "9d782424.6c0968",
+        "name": "to bool",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 340,
+        "wires": [
+            [
+                "b388013b.d53918"
+            ]
+        ]
+    },
+    {
+        "id": "7f445d4e.f07144",
+        "type": "change",
+        "z": "29a1a1c.d79afde",
+        "name": "On-Off",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "On",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "Off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 240,
+        "wires": [
+            [
+                "68574f19.696e3"
+            ]
+        ]
+    },
+    {
+        "id": "a2cc23f.95d856",
+        "type": "mqtt in",
+        "z": "9d782424.6c0968",
+        "name": "",
+        "topic": "control/query",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "326ca7b6.517388",
+        "x": 270,
+        "y": 540,
+        "wires": [
+            [
+                "3bc7993d.36851e"
+            ]
+        ]
+    },
+    {
+        "id": "6d2766ae.a7f478",
+        "type": "change",
+        "z": "29a1a1c.d79afde",
+        "name": "to bool",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "str",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "str",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 180,
+        "wires": [
+            [
+                "20b9c9bb.2dd87e"
+            ]
+        ]
+    },
+    {
+        "id": "941469ea.825c1",
+        "type": "mqtt out",
+        "z": "9d782424.6c0968",
+        "name": "",
+        "topic": "status/subreddit",
+        "qos": "1",
+        "retain": "true",
+        "broker": "326ca7b6.517388",
+        "x": 1140,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "29dd9d04.2aae7a",
+        "type": "ui_dropdown",
+        "z": "29a1a1c.d79afde",
+        "name": "Subreddit Selector",
+        "label": "Subreddit:",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "28b3a2f1.e52a06",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "r/",
+                "value": "",
+                "type": "str"
+            },
+            {
+                "label": "announcements",
+                "value": "announcements",
+                "type": "str"
+            },
+            {
+                "label": "AskReddit",
+                "value": "AskReddit",
+                "type": "str"
+            },
+            {
+                "label": "worldnews",
+                "value": "worldnews",
+                "type": "str"
+            },
+            {
+                "label": "AmItheAsshole",
+                "value": "AmItheAsshole",
+                "type": "str"
+            },
+            {
+                "label": "NoStupidQuestions",
+                "value": "NoStupidQuestions",
+                "type": "str"
+            },
+            {
+                "label": "pcmasterrace",
+                "value": "pcmasterrace",
+                "type": "str"
+            },
+            {
+                "label": "politics",
+                "value": "politics",
+                "type": "str"
+            },
+            {
+                "label": "gaming",
+                "value": "gaming",
+                "type": "str"
+            },
+            {
+                "label": "funny",
+                "value": "funny",
+                "type": "str"
+            },
+            {
+                "label": "movies",
+                "value": "movies",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 690,
+        "y": 520,
+        "wires": [
+            [
+                "cfa547be.98a068"
+            ]
+        ]
+    },
+    {
+        "id": "daf77601.47e76",
+        "type": "mqtt in",
+        "z": "29a1a1c.d79afde",
+        "name": "",
+        "topic": "status/subreddit",
+        "qos": "1",
+        "datatype": "utf8",
+        "broker": "326ca7b6.517388",
+        "x": 480,
+        "y": 520,
+        "wires": [
+            [
+                "29dd9d04.2aae7a"
+            ]
+        ]
+    },
+    {
+        "id": "cfa547be.98a068",
+        "type": "mqtt out",
+        "z": "29a1a1c.d79afde",
+        "name": "",
+        "topic": "control/subreddit",
+        "qos": "1",
+        "retain": "false",
+        "broker": "326ca7b6.517388",
+        "x": 920,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "ca4bd0fb.120628",
+        "type": "mqtt in",
+        "z": "9d782424.6c0968",
+        "name": "",
+        "topic": "control/subreddit",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "326ca7b6.517388",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "9c8ad5f.a0b2328"
+            ]
+        ]
+    },
+    {
+        "id": "c02b94a7.c31ae8",
+        "type": "inject",
+        "z": "9d782424.6c0968",
+        "name": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 370,
+        "y": 400,
+        "wires": [
+            [
+                "b388013b.d53918"
+            ]
+        ]
+    },
+    {
+        "id": "26b06d6f.d6a7da",
+        "type": "mqtt out",
+        "z": "9d782424.6c0968",
+        "name": "",
+        "topic": "status/query",
+        "qos": "1",
+        "retain": "true",
+        "broker": "326ca7b6.517388",
+        "x": 650,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "693ce003.402c78",
+        "type": "mqtt in",
+        "z": "29a1a1c.d79afde",
+        "name": "",
+        "topic": "status/query",
+        "qos": "1",
+        "datatype": "utf8",
+        "broker": "326ca7b6.517388",
+        "x": 350,
+        "y": 420,
+        "wires": [
+            [
+                "bbad333b.de2618"
+            ]
+        ]
+    }
+]
